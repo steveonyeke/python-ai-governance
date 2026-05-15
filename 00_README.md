@@ -1,4 +1,3 @@
-Here is the fully reformatted, professional Master Executive Summary for your root 00_README.md. It perfectly integrates your new 6-month roadmap with your personal branding and the "I/my" perspective.
 # AI Governance & Agentic Audit Suite
 ### Technical Frameworks for RLHF Alignment | Sociotechnical Risk | Agentic Oversight
 This repository serves as the central technical engine for my startup, Afrispan Data Labs. It documents my 6-month mission to transition from deep-level AI Quality Assurance to Agentic Governance. I am architecting the tools required to translate global regulatory standards (EU AI Act | NIST RMF) into automated, code-based auditing systems.
