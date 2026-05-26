@@ -34,15 +34,16 @@ This repository serves as the central technical engine for my startup, Afrispan 
  * Establish a "Governance by Design" methodology for high-stakes enterprise AI deployment.
 
 ## Progress
-Phase 1 ✅ — Python Foundations
-Phase 2 ✅ — Data Handling and Visualization
-Phase 3 ✅ — LLM Evaluation
-Phase 4 ✅ — Red-Teaming and Safety Analysis
-Phase 5 ✅ — Bias Auditing and EU AI Act Compliance
-Phase 6 ⏳ — Function Calling and Tool-Use Auditing ← NEXT
-Phase 7 ⏳ — RAG & Observer Agent
-Phase 8 ⏳— Multi-Agent Governance & Kill-Switch
-Phase 9 ⏳— Portfolio & Launch
+
+- ✅ Phase 1: Python Foundations
+- ✅ Phase 2: Data Handling and Visualization
+- ✅ Phase 3: LLM Evaluation
+- ✅ Phase 4: Red-Teaming and Safety Analysis
+- ✅ Phase 5: Bias Auditing and EU AI Act Compliance
+- ⏳ Phase 6: Function Calling and Tool-Use Auditing
+- ⏳ Phase 7: RAG and Observer Agent
+- ⏳ Phase 8: Multi-Agent Governance and Kill-Switch
+- ⏳ Phase 9: Portfolio and Launch
 - 
 Steve Onyeke | Founder: Afrispan Data Labs
 *Current: AI Quality Analyst | Turing*
