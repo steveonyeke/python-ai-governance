@@ -1,7 +1,7 @@
-# Phase 1 — Foundations
+# Phase 1:Foundations
 
 ## Goal
-Build core Python skills needed for LLM evaluation work.
+Review core Python skills needed for LLM evaluation work.
 
 ## Notebooks
 - `01_variables_and_basics.ipynb` — Variables and data types
