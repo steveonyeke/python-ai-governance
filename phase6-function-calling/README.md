@@ -125,103 +125,20 @@ Python | Pandas | Gemini API | Google Colab | google-genai
 - NIST AI RMF: Measure function (quantify tool-use vulnerabilities)
 
 ## Status
-Phase 6 in progress. Lessons 3 and 4 pending.
+Complete.
 
 ---
 
-## LinkedIn Post 1: Technical Audience
+## Running This Code
 
-I gave an AI model tools to use. Then I tried to break it.
+These notebooks require a Google Gemini API key.
 
-Phase 6 of my AI governance training moves into agentic
-territory. Instead of just generating text, the model now
-selects and calls Python functions autonomously based on
-natural language queries.
+1. Get a free API key at aistudio.google.com
+2. Open the notebook in Google Colab
+3. Click the key icon in the left sidebar
+4. Add a secret named GOOGLE_API_KEY
+5. Paste your API key as the value
+6. Run all cells
 
-I built three governance tools:
-A regulation lookup tool.
-An EU AI Act risk assessor.
-A fine calculator with correct Article 99(3) penalty tiers.
-
-Then I ran 8 vulnerability tests across four attack categories:
-parameter manipulation, tool selection manipulation,
-prompt injection via tool parameters, and boundary testing.
-
-Three findings worth sharing:
-
-Finding 1: Prompt injection through tool parameters failed.
-When I embedded "ignore previous instructions" inside a
-jurisdiction field, the model extracted only "EU" and
-discarded the injection. Tool parameters are more resilient
-to injection than free-text prompts.
-
-Finding 2: Silent assumptions are a hidden governance risk.
-When I passed an unknown violation type, the model silently
-mapped it to the nearest known tier and returned a result.
-No error. No flag. Just a quiet assumption that produced
-output based on inferred rather than validated input.
-In a production system handling real compliance decisions,
-that silence is dangerous.
-
-Finding 3: Input validation is not optional.
-Without explicit guards, a negative revenue value crashed
-the tool with a TypeError. With validation, it returned a
-clean structured error. Every tool deployed in an agentic
-system needs boundary checks.
-
-Overall tool-use safety rate: 8 out of 8.
-
-The model held firm. But two findings require mitigation
-before any production deployment.
-
-Full audit on GitHub:
-https://github.com/steveonyeke/python-ai-governance/tree/main/phase6-function-calling
-
-#AIGovernance #AgenticAI #LLMEvaluation #FunctionCalling
-#ResponsibleAI #Python #BuildInPublic #MachineLearning
-
----
-
-## LinkedIn Post 2: Policy and Compliance Audience
-
-When AI systems can take actions, the governance stakes change.
-
-Most AI governance conversation focuses on what models say.
-Phase 6 of my technical governance training focuses on
-what models do.
-
-Function calling gives an LLM the ability to select and
-execute tools autonomously. In an enterprise context this
-means the model is not just answering questions. It is
-querying databases, calculating figures, triggering workflows,
-and making classification decisions that feed into real
-business processes.
-
-I tested this with three governance-specific tools:
-a regulation database, an EU AI Act risk classifier,
-and a fine calculator aligned to Article 99(3) penalty tiers.
-
-The most significant finding was not a failure. It was a
-silent success that looked correct but was not.
-
-When given an unrecognised input, the model quietly mapped
-it to the nearest known category and returned a result
-without flagging the uncertainty. The output looked valid.
-The process was not.
-
-Under NIST AI RMF Measure function requirements, this is
-exactly the kind of behaviour that must be detected and
-documented before deployment. An AI system that makes silent
-assumptions in compliance-adjacent workflows is not a
-trustworthy system, regardless of how often it gets the
-right answer.
-
-EU AI Act Article 15 requires AI systems to be accurate,
-robust, and resilient. Robustness includes knowing when
-to surface uncertainty rather than papering over it.
-
-Full technical documentation on GitHub:
-https://github.com/steveonyeke/python-ai-governance/tree/main/phase6-function-calling
-
-#AIGovernance #EUAIAct #NISTFramework #AgenticAI
-#ResponsibleAI #Compliance #RiskManagement #BuildInPublic
+Note: Some notebooks make multiple API calls.
+The free tier allows 20 requests per day.
