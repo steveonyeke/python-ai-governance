@@ -95,3 +95,16 @@ Python | Pandas | NumPy | Matplotlib | Gemini API | Google Colab
 Phase 5 in progress. Lesson 4 (Bias Audit Report) pending.
 
 ---
+## Running This Code
+
+These notebooks require a Google Gemini API key.
+
+1. Get a free API key at aistudio.google.com
+2. Open the notebook in Google Colab
+3. Click the key icon in the left sidebar
+4. Add a secret named GOOGLE_API_KEY
+5. Paste your API key as the value
+6. Run all cells
+
+Note: Some notebooks make multiple API calls.
+The free tier allows 20 requests per day.
