@@ -40,11 +40,18 @@ This repository serves as the central technical engine for my startup, Afrispan 
 - ✅ Phase 3: LLM Evaluation
 - ✅ Phase 4: Red-Teaming and Safety Analysis
 - ✅ Phase 5: Bias Auditing and EU AI Act Compliance
-- ⏳ Phase 6: Function Calling and Tool-Use Auditing
+- ✅ Phase 6: Function Calling and Tool-Use Auditing
 - ⏳ Phase 7: RAG and Observer Agent
 - ⏳ Phase 8: Multi-Agent Governance and Kill-Switch
 - ⏳ Phase 9: Portfolio and Launch
-- 
+
+## Running the Code
+Notebooks require a Google Gemini API key.
+Get a free key at aistudio.google.com and add it
+to Colab secrets as GOOGLE_API_KEY before running.
+
+All notebooks include saved outputs so results
+can be reviewed without running the code.
 Steve Onyeke | Founder: Afrispan Data Labs
 *Current: AI Quality Analyst | Turing*
 LinkedIn | GitHub
