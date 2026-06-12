@@ -29,28 +29,48 @@ semantic intent classification, and a complete
 governance report consolidating all findings.
 
 ## Architecture
+
+```
 User Query
-|
-v
-SEMANTIC INTENT CHECK (pre-execution gate)
-Strips wrapper framing. Evaluates core intent.
-Blocks malicious queries before pipeline runs.
-|
-| (if ALLOWED)
-v
-RAG AGENT
-Retrieves relevant regulatory documents.
-Generates answer grounded in source text only.
-Returns answer with full source citations.
-|
-v
-OBSERVER AGENT
-Independently audits the RAG response.
-Scores grounding, relevance, and integrity.
-Returns APPROVED, FLAGGED, or REJECTED verdict.
-|
-v
+     |
+     v
+┌─────────────────────────────────────────┐
+│         SEMANTIC INTENT CHECK           │
+│           (pre-execution gate)          │
+│  Strips wrapper framing.                │
+│  Evaluates core intent.                 │
+│  Blocks malicious queries before        │
+│  pipeline runs.                         │
+└─────────────────────────────────────────┘
+     |
+     | (if ALLOWED)
+     v
+┌─────────────────────────────────────────┐
+│              RAG AGENT                  │
+│  Retrieves relevant regulatory          │
+│  documents.                             │
+│  Generates answer grounded in           │
+│  source text only.                      │
+│  Returns answer with full source        │
+│  citations.                             │
+└─────────────────────────────────────────┘
+     |
+     v
+┌─────────────────────────────────────────┐
+│           OBSERVER AGENT                │
+│  Independently audits the RAG           │
+│  response.                              │
+│  Scores grounding, relevance,           │
+│  and integrity.                         │
+│  Returns APPROVED, FLAGGED,             │
+│  or REJECTED verdict.                   │
+└─────────────────────────────────────────┘
+     |
+     v
 User receives audited, grounded answer
+```
+
+
 
 ## Key Findings
 
