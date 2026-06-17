@@ -247,53 +247,16 @@ Complete. Phase 8 next: Multi-Agent Governance
 and Kill-Switch Architecture.
 
 ---
+Running This Code
+These notebooks require a Google Gemini API key.
 
-
-
-## LinkedIn Post 2: Policy and Compliance Audience
-
-A governance system that audits itself using the
-same model that generated the output is not
-independent governance. It is a mirror.
-
-Phase 7 of my technical AI governance training
-built a three-layer agentic oversight pipeline
-covering pre-execution intent classification,
-retrieval-grounded generation, and independent
-response auditing.
-
-The most important finding was not a metric.
-It was an architectural principle.
-
-When the Observer Agent and the RAG Agent share
-the same model family, the Observer validates
-the RAG Agent's biases rather than challenging
-them. It cannot flag what it cannot see. And it
-cannot see the blind spots they share.
-
-This is the same principle that makes financial
-audit independence non-negotiable. An auditor
-employed by the entity they audit is not an
-auditor. They are a formality.
-
-The same logic applies to AI governance.
-An Observer Agent built on the same model as
-the system it is auditing provides the appearance
-of oversight without the substance.
-
-The technical fix is cross-model auditing.
-The governance principle is older than AI:
-the auditor must be independent of the auditee.
-
-EU AI Act Article 14 requires that high-risk AI
-systems be designed to allow effective human
-oversight. Automated oversight layers can support
-that requirement but only if they are genuinely
-independent, not structurally biased toward
-approving what the primary system produces.
-
-Full technical documentation on GitHub:
-https://github.com/steveonyeke/python-ai-governance/tree/main/phase7-rag-observer-agent
+1.Get a free API key at aistudio.google.com
+2.Open the notebook in Google Colab
+3.Click the key icon in the left sidebar
+4.Add a secret named GOOGLE_API_KEY
+5.Paste your API key as the value
+6.Run all cells
+Note: Some notebooks make multiple API calls. The free tier allows 20 requests per day.
 
 #AIGovernance #EUAIAct #ResponsibleAI #AgenticAI
 #AuditIndependence #Compliance #BuildInPublic
