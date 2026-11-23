@@ -26,7 +26,7 @@ phase7-rag-observer-agent/     Project 1, Phase 7
 phase8-multi-agent-governance/ Project 1, Phase 8 (the real kill-switch)
 phase9-portfolio-launch/       Project 1, Phase 9 (FRIA, Conformity Report, Cross-Border Framework)
 project-2-llm-evaluation-suite/ Project 2, all 13 notebooks plus CI/CD (Dockerfile, GitHub Actions, pytest)
-project-3-governance-runtime/n8n-workflows/  Project 3, Project 3, all four phases built.
+project-3-governance-runtime/n8n-workflows/  Project 3, all four phases built.
 project-4-ai-assurance/        Project 4, AI Assurance skills build (five milestones, M1 to M5)
 .github/workflows/             deepeval-regression.yml, the real, verified CI pipeline
 docs/PROJECT_HISTORY.md        Full Project 1 and 2 detail, read on demand
