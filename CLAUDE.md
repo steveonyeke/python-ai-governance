@@ -8,10 +8,10 @@ This file is read automatically at the start of every Claude Code session in thi
 
 - **Project 1**: nine phases proving core governance principles, executed against real Gemini API calls. Complete.
 - **Project 2**: a thirteen-notebook production evaluation suite plus a live CI/CD layer. Architecture complete and pytest-verified; most notebooks run in simulated mode pending funded API billing.
-- **Project 3**: the evaluation logic from Project 2 wired into live orchestration infrastructure that actually acts on what it finds, not just scores it. Phases 1 and 2 built and reviewed end to end.
-- **Project 4**: a 60-day public build (23 Nov 2026 to 21 Jan 2027) of evaluation, red-team and assurance skills: Inspect-based evaluation engineering, RL environment and rubric design, agentic red-teaming, runtime monitoring and an assurance case. Status: BUILDING. Scope and milestones live in project-4-ai-assurance/README.md. Project 4 follows every rule in this file, and its notebooks carry an explicit SIMULATED_OUTPUT flag. Project 3 Phases 3 and 4 remain the active Project 3 work.**This is the active work.**
+- **Project 3**: the evaluation logic from Project 2 wired into live orchestration infrastructure that actually acts on what it finds, not just scores it. All four phases built and reviewed end to end. Phases 3 and 4 verified against real historical data from Projects 1 and 2. Phases 1 and 2 pending live deployment against a real repository; Phases 3 and 4 not yet wired to live Langfuse traces.
+- **Project 4**: a 60-day public build (23 Nov 2026 to 21 Jan 2027) of evaluation, red-team and assurance skills: Inspect-based evaluation engineering, RL environment and rubric design, agentic red-teaming, runtime monitoring and an assurance case. Status: BUILDING. Scope and milestones live in project-4-ai-assurance/README.md. Project 4 follows every rule in this file, and its notebooks carry an explicit SIMULATED_OUTPUT flag. **This is the active work.**
 
-Full narrative detail for Projects 1 and 2 lives in `docs/PROJECT_HISTORY.md`. Read it before touching anything in `phase1-foundations/` through `phase9-portfolio-launch/` or `project-2-llm-evaluation-suite/`. The actionable spec for the current work, Project 3 Phases 3 and 4, lives in `project-3-governance-runtime/PHASE_3_4_SPEC.md`. Read that before writing any new code.
+Full narrative detail for Projects 1 and 2 lives in `docs/PROJECT_HISTORY.md`. Read it before touching anything in `phase1-foundations/` through `phase9-portfolio-launch/` or `project-2-llm-evaluation-suite/`. The Project 3 Phases 3 and 4 spec, kept as the record of that build, lives in project-3-governance-runtime/PHASE_3_4_SPEC.md. Read it before changing any Project 3 code. The active work is Project 4, scoped in project-4-ai-assurance/README.md.
 
 ## Repository Structure
 
@@ -26,7 +26,7 @@ phase7-rag-observer-agent/     Project 1, Phase 7
 phase8-multi-agent-governance/ Project 1, Phase 8 (the real kill-switch)
 phase9-portfolio-launch/       Project 1, Phase 9 (FRIA, Conformity Report, Cross-Border Framework)
 project-2-llm-evaluation-suite/ Project 2, all 13 notebooks plus CI/CD (Dockerfile, GitHub Actions, pytest)
-project-3-governance-runtime/n8n-workflows/  Project 3, current work
+project-3-governance-runtime/n8n-workflows/  Project 3, Project 3, all four phases built.
 project-4-ai-assurance/        Project 4, AI Assurance skills build (five milestones, M1 to M5)
 .github/workflows/             deepeval-regression.yml, the real, verified CI pipeline
 docs/PROJECT_HISTORY.md        Full Project 1 and 2 detail, read on demand
