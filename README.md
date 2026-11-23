@@ -2,7 +2,7 @@
 
 **A Working Regulatory Evidence Engine for EU AI Act, NIST AI RMF, and Cross-Border Deployer Compliance, Now Extended to Live Governance Orchestration**
 
-This repository is the technical foundation of Afrispan Data Labs, an AI deployment assurance practice for SMEs, built first for Africa. It is not a teaching log. It is a working evidence suite spanning three projects: governance principles discovered and proven (Project 1), a production evaluation architecture built and pytest-verified (Project 2), and that architecture wired into live orchestration infrastructure that actually acts on what it finds (Project 3).
+This repository is the technical foundation of Afrispan AI Assurance, an AI deployment assurance practice for SMEs, built first for Africa. It is not a teaching log. It is a working evidence suite spanning four projects: governance principles discovered and proven (Project 1), a production evaluation architecture built and pytest-verified (Project 2), and that architecture wired into live orchestration infrastructure that actually acts on what it finds (Project 3).
 
 Every claim in this README is backed by code in this repository, real measured output, or both, and is tagged clearly where execution status differs. Nothing here is aspirational.
 
@@ -27,6 +27,7 @@ Five governance principles recur across all three projects, found by direct test
 | **Project 1** | Governance principles, discovered through nine phases of testing | Complete, executed against real Gemini API calls throughout |
 | **Project 2** | Production LLM evaluation architecture: cross-model judging, red-teaming, drift monitoring, CI/CD | Architecture complete and pytest-verified; most notebooks run in simulated mode pending funded API billing, CI/CD layer confirmed live |
 | **Project 3** | Governance orchestration: the evaluation logic wired into live infrastructure that acts | All four phases built and reviewed end to end. Phases 1 to 2 pending live deployment against a real repository; Phases 3 to 4 verified against real historical data from Projects 1 and 2, not yet wired to live Langfuse traces |
+| **Project 4** | AI assurance skills build: evaluation engineering, RL environment and rubric design, agentic red-teaming, runtime monitoring, assurance case | BUILDING. Started 23 Nov 2026, M1 in progress. See project-4-ai-assurance/README.md |
 
 ---
 
